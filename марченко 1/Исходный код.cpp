@@ -1,7 +1,7 @@
 #include <iostream>
-#include <string>
 #include <cstdio>
 #include <Windows.h>
+
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
@@ -9,39 +9,29 @@ using namespace std;
 int funcCC();
 int funcPS();
 
-int main(int argc, char** argv)
+char str[100];
+int main()
 {
-	int h;
 	SetConsoleCP(1251);
 	SetConsoleOutputCP(1251);
-	char str[100];
+	int h;
+	
 	start:
 	cout << "Який тип вводу/виводу ви хочете обрати?" << endl;
 	cout << "\n";
 	cout << " Натиснiть 1, якщо cin/cout" << endl;
 	cout << " Натиснiть 2, якщо printf/scanf" << endl;
 	cin >> h;
-	switch (h)
-		case 1:
+	if (h == 1)
 	{
+		funcCC();
+	}
+	else
+		if (h == 2)
 		{
-		cout << "Потоковий ввід і вивід тексту" << endl;
-		cout << "Введіть текстовий рядок : " << endl;
-		gets(str);
-		cout << "Ви ввели рядок:" << str << endl << endl;
-     	}
-		break;
-		
-		case 2:
-		{
-			cout << "Ви ввели рядок:" << str << endl << endl;
-			cout << "-----------------------------------------------------------\n1. Ввід і вивід тексту за допомогою функцій scanf і printf.\n-----------------------------------------------------------\nВведіть текстовий рядок: ";
-			scanf("%s", str);
-			printf("Ви ввели рядок: %s\n\n", str);
+			funcPS();
 		}
-			break; 
-		default:
-		{
+		else
 			if (!cin || h>2 || h<1)
 			{
 				int i;
@@ -57,14 +47,38 @@ int main(int argc, char** argv)
 				goto start;
 
 			}
-		}
+		
 
-}
+
 	system("pause");
 	return 0;
 }
 
 int funcCC()
 {
+	
+	
+		cout << "Введіть текстовий рядок : " << endl;
+		fflush(stdin);
+		gets(str);
+		
+		cout << "Ви ввели рядок:" << str << endl;
+	
+		system("pause");
+		return 0;
 
+	
+}
+
+int funcPS()
+{
+	{
+		
+		cout << "-----------------------------------------------------------\n1. Ввід і вивід тексту за допомогою функцій scanf і printf.\n-----------------------------------------------------------\nВведіть текстовий рядок: ";
+		scanf("%s", str);
+		printf("Ви ввели рядок: %s\n\n", str);
+	}
+
+	system("pause");
+	return 0;
 }
