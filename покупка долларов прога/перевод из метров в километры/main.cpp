@@ -11,7 +11,7 @@ int main()
 	char letter;
 	
         cout << "введите актуальный курс доллара" << endl;
-		cin >> kurs;
+		cin >> kurs; cout << "\n"; cout << "\n";
 		
 
 		cout << "Введите количество Долларов которые вы хотите купить" << endl;
