@@ -1,0 +1,15 @@
+﻿Сборка начата 10.09.2015 21:16:10.
+     1>Проект "D:\git repos\покупка долларов прога\перевод из метров в километры\перевод из метров в километры.vcxproj" в узле 2 (целевые объекты Build).
+     1>ClCompile:
+         D:\visualstudio\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+     1>d:\git repos\покупка долларов прога\перевод из метров в километры\main.cpp(8): warning C4102: start: неиспользованная метка
+     1>d:\git repos\покупка долларов прога\перевод из метров в километры\main.cpp(11): warning C4101: letter: неиспользованная локальная переменная
+       Link:
+         D:\visualstudio\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\git repos\покупка долларов прога\Debug\перевод из метров в километры.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\git repos\покупка долларов прога\Debug\перевод из метров в километры.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\git repos\покупка долларов прога\Debug\перевод из метров в километры.lib" /MACHINE:X86 Debug\main.obj
+         перевод из метров в километры.vcxproj -> D:\git repos\покупка долларов прога\Debug\перевод из метров в километры.exe
+     1>Сборка проекта "D:\git repos\покупка долларов прога\перевод из метров в километры\перевод из метров в километры.vcxproj" завершена (целевые объекты Build).
+
+Сборка успешно завершена.
+
+Затраченное время: 00:00:02.54
