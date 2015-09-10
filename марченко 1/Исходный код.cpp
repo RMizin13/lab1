@@ -1,15 +1,13 @@
 #include <iostream>
 #include <cstdio>
 #include <Windows.h>
-
-
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+#include<string>
 
 using namespace std;
 int funcCC();
 int funcPS();
-
 char str[100];
+
 int main()
 {
 	SetConsoleCP(1251);
@@ -39,7 +37,7 @@ int main()
 				cout << "Неправильное значение,попробуйте еще раз." << endl;
 				cout << "Невiрне значення спробуйте ще раз." << endl;
 				cout << "Wrong value, try again." << endl;
-				cout << "" << endl;
+				
 				cin.clear();//восстанавливает поток и делает его работоспособным
 				fflush(stdin);//чистит поток ввода от мусора
 				for (i = 0; i < 500000000; i++);
@@ -47,9 +45,7 @@ int main()
 				goto start;
 
 			}
-		
-
-
+	
 	system("pause");
 	return 0;
 }
@@ -58,12 +54,12 @@ int funcCC()
 {
 	
 	
-		cout << "Введіть текстовий рядок : " << endl;
+		cout << "Введите строку на любом из 3х языков (укр, рус, eng) : " << endl;
 		fflush(stdin);
 		gets(str);
 		
-		cout << "Ви ввели рядок:" << str << endl;
-	
+		cout << "Ви ввели строку:" << str << endl;
+		cout << "" << endl;
 		system("pause");
 		return 0;
 
@@ -72,12 +68,15 @@ int funcCC()
 
 int funcPS()
 {
-	{
+	
 		
-		cout << "-----------------------------------------------------------\n1. Ввід і вивід тексту за допомогою функцій scanf і printf.\n-----------------------------------------------------------\nВведіть текстовий рядок: ";
-		scanf("%s", str);
-		printf("Ви ввели рядок: %s\n\n", str);
-	}
+		printf("\nВвод и вывод текста с помощью scanf і printf\n");
+		printf("\nВведите строку на любом из 3х языков (укр, рус, eng) : \n");
+		fflush(stdin);
+		gets(str);
+		printf("Ви ввели рядок: %s \n\n", str);
+		
+	
 
 	system("pause");
 	return 0;
