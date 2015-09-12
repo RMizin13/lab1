@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cstdio>
 #include <Windows.h>
-
+// пробую загрузить в бит бакет
 using namespace std;
 int funcCC();
 int funcPS();
